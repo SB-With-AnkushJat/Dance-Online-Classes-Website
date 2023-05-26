@@ -1,0 +1,2074 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --headerbg: #FFFFFF;
+    --list-name: #575757;
+    --black: #000000;
+    --paratxt: #292929;
+    --btntxt: #FFFFFF;
+    --btn: #FF79A2;
+    --footerbg: #E5F8FE;
+    --nhoverbtnbg: #EDEDED;
+    --forgettxtcol: #1F8DB1;
+    --logtxtcol: #414040;
+    --logboxborder: #B4B4B4;
+    --classlistbg: #f8f8f8;
+    --filtercolr: #919191;
+    --choosepara: #5D5D5D;
+    --hrlinecolr: #707070;
+    --loadbtnbg: #525252;
+    --bell-menu-add-bg: #E2E2E2;
+    --profile-box-shadow: rgba(0, 0, 0, 0.0588235);
+    --heading-alldetails-colr: #696969;
+    --atm1-bg: linear-gradient(90deg, #FE8DC5 12.37%, #FFD0C8 124.71%);
+    --atm2-bg: linear-gradient(90deg, #65C8E8 24.35%, #00007C 180.51%);
+    --atm3-bg: linear-gradient(270deg, #0DC7B2 -41.36%, #BEFDFF 82.33%);
+    --credit-box-shadow: 0px 0px 12.5px rgba(0, 0, 0, 0.0588235);
+    --booked-classes-bg: #CECECE;
+    --para-status-colr: #50C35D;
+    --table-data-hrline: #C9C9C9;
+    --facebook-insta-bg: #65C8E8;
+    --back-next-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.160784);
+    --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+
+}
+
+/* Utility classes */
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+.grid {
+    display: grid;
+    /* gap: 3rem; */
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-four-column {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+.header {
+    padding: 0 4.8rem;
+    height: 4rem;
+    background: var(--headerbg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.navbar-lists {
+    padding-right: 125px;
+    display: flex;
+    gap: 4.8rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    color: var(--list-name);
+    transition: color 0.3s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: var(--black);
+}
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.mobile-navbar-icon[name="close-outline"] {
+    display: none;
+}
+
+.header-profile-details {
+    gap: 1rem;
+    align-items: center;
+}
+
+.bell-icon,
+.dot-menu-icon,
+.add-cart-icon {
+    width: 3.13rem;
+    height: 3.13rem;
+    background: var(--bell-menu-add-bg);
+    border-radius: 50%;
+}
+
+.bell-icon img {
+    width: 1.12rem;
+    height: 1.15rem;
+    transform: rotate(30deg);
+
+}
+
+.dot-menu-icon img {
+    width: 1.50rem;
+    height: 1.68rem;
+}
+
+.add-cart-icon img {
+    width: 1.50rem;
+    height: 1.36rem;
+}
+
+.profile-main-section {
+    background: var(--classlistbg);
+    /* width: 1440px; */
+    height: 115.68rem;
+}
+
+.profile-container {
+    max-width: 88%;
+    display: block;
+    margin: auto;
+}
+
+.profile-heading {
+    padding-top: 2rem;
+    font-size: 36px;
+    line-height: 60px;
+    color: var(--black);
+}
+
+.p-gap {
+    gap: 3rem;
+}
+
+.profile-box {
+    /* min-width: 640px; */
+    width: 40rem;
+    height: 29.31rem;
+    background: var(--btntxt);
+    box-shadow: 0px 0px 12.5px var(--profile-box-shadow);
+    border-radius: 10px;
+}
+
+.personal-edit,
+.payment-edit {
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 0.8rem 1.70rem;
+}
+
+.personal-payment-heading {
+    font-size: 28px;
+    line-height: 54px;
+    color: var(--black);
+}
+
+.edit-para {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--forgettxtcol);
+}
+
+.personal-profile-img {
+    padding-left: 1.70rem;
+}
+
+.personal-profile-img img {
+    width: 6.56rem;
+    height: 6.56rem;
+}
+
+.profile-img-name {
+    gap: 1rem;
+}
+
+.personal-profile-name {
+    padding: 20px 0;
+}
+
+.personal-name-heading {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.profile-name-para {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.para-member {
+    color: var(--logtxtcol);
+}
+
+.para-upload {
+    color: var(--forgettxtcol);
+}
+
+.address-dob,
+.p-mobile {
+    padding: 0.5rem 0.5rem 0 1.7rem;
+}
+
+.p-pass,
+.p-dob {
+    padding-top: 0.5rem;
+}
+
+.email-pass {
+    padding: 1.5rem 0 1.7rem 1.7rem;
+}
+
+.heading-alldetails {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--heading-alldetails-colr);
+}
+
+.para-alldetails {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black);
+}
+
+.your-class-card {
+    overflow: hidden;
+}
+
+
+.cardnub-name {
+    justify-content: space-between;
+    margin: 1.5rem 1.70rem;
+    width: 37.25rem;
+    height: 3.75rem;
+    background: var(--btntxt);
+    box-shadow: 0px 0px 12.5px var(--profile-box-shadow);
+    border-radius: 10px;
+}
+
+.card-number {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--choosepara);
+    padding-left: 0.7rem;
+}
+
+.card-name {
+    font-size: 16px;
+    line-height: 54px;
+    color: var(--choosepara);
+    padding-right: 0.7rem;
+    text-transform: capitalize;
+}
+
+
+.class-card-hding {
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.atmcard {
+    min-width: 28.94rem;
+    height: 18.37rem;
+    border-radius: 26px;
+}
+
+.atm-logo {
+    padding: 0.9rem 2.5rem 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.atm-logo img {
+    width: 11.62rem;
+    height: 3.25rem;
+}
+
+.atm-name-date {
+    padding-left: 2rem;
+
+}
+
+.atm-for-name {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black);
+}
+
+.atm-dance-style-name {
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black);
+}
+
+.classes-valid-all {
+    gap: 3rem;
+    padding: 2rem 0 1.5rem 0;
+}
+
+.classes-left,
+.valid-right {
+    align-items: center;
+}
+
+.classes-valid-para-name {
+    font-size: 8px;
+    line-height: 8px;
+    color: var(--black);
+}
+
+.classes-valid-para-vale {
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black);
+}
+
+.atm1 {
+    background: var(--atm1-bg);
+}
+
+.atm2-padding {
+    padding: 0 4rem 0 4rem;
+}
+
+.atm2 {
+    background: var(--atm2-bg);
+}
+
+.atm3 {
+    background: var(--atm3-bg);
+}
+
+/* forward & Back buttons */
+
+.back img,
+.forward img {
+    width: 1.05rem;
+    height: 1.75rem;
+    cursor: pointer;
+}
+
+.back {
+    left: 0;
+}
+
+.back,
+.forward {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 115%;
+    background: var(--btntxt);
+    box-shadow: var(--back-next-box-shadow);
+    border-radius: 50%;
+}
+
+.forward {
+    right: 0;
+    border-radius: 50%;
+}
+
+
+.your-credit-heading {
+    padding: 2rem 0 0.5rem 0
+}
+
+.credit-account {
+    width: 79rem;
+    height: 4.7rem;
+    background: var(--btntxt);
+    box-shadow: var(--credit-box-shadow);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem 0 1rem;
+}
+
+.balance-para-digit {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.balance-para {
+    color: var(--choosepara);
+}
+
+.balance-digit {
+    color: var(--black);
+}
+
+.history {
+    width: 79rem;
+    height: 28.62rem;
+    background: var(--btntxt);
+    box-shadow: var(--credit-box-shadow);
+    border-radius: 10px;
+    margin: 3rem 0 0 0;
+}
+
+.booked-pay-history,
+.history-heading {
+    padding-left: 2rem;
+}
+
+.booked-classes {
+    width: 11.81rem;
+    height: 2.81rem;
+    background: var(--booked-classes-bg);
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.payment-history {
+    padding-left: 1rem;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+
+.table-heading {
+    padding: 1.7rem 0 0 2.3rem;
+}
+
+.history-h5-heading {
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.date {
+    width: 11.25rem;
+
+}
+
+.class-name {
+    width: 20.93rem;
+
+}
+
+.level {
+    width: 11.25rem;
+}
+
+.class-type {
+    width: 27.81rem;
+}
+
+.status {
+    width: 7.5rem;
+}
+
+.history-para {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--choosepara);
+}
+
+.table-data1 {
+    padding: 1.5rem 0 0.8rem 2.3rem;
+}
+
+.table-data2 {
+    padding: 1rem 0 0.8rem 2.3rem;
+}
+
+.para-status {
+    color: var(--para-status-colr);
+}
+
+.table-data-hrline {
+    width: 77.31rem;
+    border: 1px solid var(--table-data-hrline);
+    margin-left: 1.6rem;
+}
+
+.section-footer {
+    padding: 0 4.8rem;
+    /* height: 22.87rem; */
+    background: var(--footerbg);
+}
+
+.logo-footer {
+    padding-top: 4rem;
+    align-items: center;
+    width: 25rem;
+}
+
+.logo-footer img {
+    width: 22.37rem;
+    height: 6.31rem;
+}
+
+.head-office,
+.about-us,
+.connect {
+    padding-top: 4rem;
+}
+
+.head-office h4 {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.head-office address {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--paratxt);
+    text-transform: capitalize;
+}
+
+
+.footer-list li a,
+.connect h4 {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+}
+
+.focebook-icon-footer,
+.instagram-icon-footer {
+    width: 3.68rem;
+    height: 3.68rem;
+    border-radius: 50%;
+    background: var(--facebook-insta-bg);
+}
+
+.connect-icon {
+    padding-top: 1rem;
+}
+
+.focebook-icon-footer {
+    margin: 0 1rem 0 0;
+}
+
+.connect-icon img {
+    width: 0.96rem;
+    height: 1.39rem;
+    color: var(--btntxt);
+}
+
+.copyright-section {
+    padding-top: 3rem;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.terms-policy {
+    margin: 0 auto;
+    padding-left: 284px;
+
+}
+
+.terms-policy h4 {
+    padding-left: 2rem;
+}
+
+.copyright h4,
+.terms-policy h4 {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+@media (max-width:1350px) {
+    .header {
+        padding: 0 3.8rem;
+    }
+
+    .credit-account,
+    .history {
+        width: 74.1rem;
+    }
+
+    .p-pass {
+        padding-left: 50px;
+    }
+
+    .p-dob {
+        padding-left: 60px;
+    }
+
+    .table-data-hrline {
+        width: 71.31rem;
+    }
+
+}
+
+@media (max-width:1270px) {
+
+    .credit-account,
+    .history {
+        width: 69.6rem;
+    }
+
+    .p-pass {
+        padding-left: 14px;
+    }
+
+    .p-dob {
+        padding-left: 50px;
+    }
+
+    .table-data-hrline {
+        width: 66.31rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .header {
+        padding: 0 2.8rem;
+    }
+
+    .credit-account,
+    .history {
+        width: 66rem;
+    }
+
+    .table-data-hrline {
+        width: 62.5rem;
+    }
+
+    .profile-container {
+        max-width: 93%;
+    }
+}
+
+@media (max-width:1154px) {
+    .profile-container {
+        max-width: 98%;
+    }
+
+    .p-pass {
+        padding-left: 55px;
+    }
+
+    .p-dob {
+        padding-left: 78px;
+    }
+}
+
+@media (max-width:1135px) {
+    .header {
+        padding: 0 1.8rem;
+    }
+
+    .p-gap {
+        gap: 2rem;
+    }
+
+    .personal-left {
+        width: 27rem;
+    }
+
+    .profile-box {
+        width: 37rem;
+    }
+
+    .cardnub-name {
+        width: 34rem;
+    }
+}
+
+@media (max-width:1065px) {
+
+    .bell-icon,
+    .dot-menu-icon,
+    .add-cart-icon,
+    .profile-img img {
+        width: 2.81rem;
+        height: 2.81rem;
+    }
+
+    .profile-name h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .profile-name p {
+        font-size: 14px;
+    }
+
+    .profile-main-section {
+        /* width: 64rem; */
+        height: 113.68rem;
+    }
+
+    .profile-box {
+        width: 28.93rem;
+        height: 29.31rem;
+    }
+
+    .cardnub-name {
+        width: 26.31rem;
+    }
+
+    .atmcard {
+        min-width: 27rem;
+        height: 16.81rem;
+    }
+
+    .atm2-padding {
+        padding-left: 4rem;
+    }
+
+    .credit-account {
+        width: 55.4rem;
+        height: 4.5rem;
+    }
+
+    .history {
+        width: 55.4rem;
+        height: 28.62rem
+    }
+
+    .date {
+        width: 10.5rem;
+    }
+
+    .level {
+        width: 9rem;
+    }
+
+    .class-type {
+        width: 19.93rem;
+    }
+
+    .class-name {
+        width: 23.18rem;
+    }
+
+    .table-data-hrline {
+        width: 53rem;
+    }
+
+    .section-footer {
+        padding: 0 2rem;
+    }
+
+    .logo-footer img {
+        width: 17.5rem;
+        height: 5.31rem;
+    }
+
+    .logo-footer {
+        width: 19.37rem;
+    }
+
+    .terms-policy {
+        padding-left: 13.87rem;
+    }
+}
+
+@media (max-width:987px) {
+    .header {
+        position: relative;
+    }
+
+    .header-profile-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-name {
+        margin-top: 20px;
+    }
+
+    .add-cart-icon {
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 37rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--gradient);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        /* z-index: 9999; */
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 9999;
+        border: 3px solid var(--black);
+        color: var(--black);
+    }
+
+    .mobile-navbar-icon {
+        width: 3rem;
+        height: 3rem;
+        color: var(--black);
+    }
+
+    .navbar-lists {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar-link:link,
+    .navbar-link:visited {
+        color: var(--black);
+        font-size: 3.2rem;
+    }
+
+    .active .navbar {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+        z-index: 9999;
+    }
+
+    .active .mobile-navbar-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-icon[name="menu-outline"] {
+        display: none;
+    }
+}
+
+@media (max-width:941px) {
+    .p-gap {
+        gap: 1rem;
+    }
+
+    .atm2-padding {
+        padding-left: 2rem;
+    }
+
+    .section-footer {
+        padding: 0 1.2rem;
+    }
+
+    .logo-footer img {
+        width: 230px;
+        height: 60px;
+    }
+
+    .logo-footer {
+        width: 240px;
+    }
+
+    .footer-list li a,
+    .connect h4,
+    .head-office h4,
+    .head-office address {
+        font-size: 15px;
+    }
+
+    .focebook-icon-footer,
+    .instagram-icon-footer {
+        width: 47px;
+        height: 47px;
+    }
+
+    .copyright h4,
+    .terms-policy h4 {
+        font-size: 13px;
+    }
+
+    .terms-policy {
+        padding-left: 190px;
+    }
+}
+
+@media (max-width:910px) {
+    .p-pass {
+        padding-left: 19px;
+    }
+
+    .p-dob {
+        padding-left: 57px;
+    }
+
+    .atmcard {
+        min-width: 26rem;
+    }
+
+    .history {
+        width: 54.4rem;
+    }
+
+    .table-data-hrline {
+        width: 52rem;
+    }
+}
+
+@media (max-width:875px) {
+    .profile-heading {
+        font-size: 34px;
+    }
+
+    .personal-payment-heading {
+        font-size: 26px;
+        line-height: 52px;
+    }
+
+    .edit-para {
+        font-size: 13px;
+    }
+
+    .email-pass {
+        grid-template-columns: none;
+        flex-direction: column;
+        padding: 1.5rem 0 0.3rem 1.7rem;
+    }
+
+    .email-pass,
+    .address-dob {
+        margin-left: 0;
+    }
+
+    .p-pass {
+        padding-left: 0;
+    }
+
+    .p-dob {
+        padding: 0;
+    }
+
+    .address-dob,
+    .p-mobile {
+        padding: 0.6rem 0.5rem 0 1.7rem;
+    }
+
+    .atmcard {
+        min-width: 24rem;
+    }
+
+    .balance-para-digit {
+        font-size: 22px;
+    }
+
+    .credit-account,
+    .history {
+        width: 51.4rem;
+    }
+
+    .table-data-hrline {
+        width: 49rem;
+    }
+
+    .class-type {
+        width: 15.93rem;
+    }
+
+    .booked-classes {
+        width: 9.81rem;
+        font-size: 14px;
+    }
+
+    .payment-history {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:833px) {
+    .profile-heading {
+        font-size: 32px;
+    }
+
+    .personal-payment-heading {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .heading-alldetails {
+        font-size: 13px;
+    }
+
+    .para-alldetails {
+        font-size: 18px;
+    }
+
+    .edit-para {
+        font-size: 11px;
+    }
+
+    .card-number {
+        font-size: 14px;
+    }
+
+    .personal-name-heading {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .card-name {
+        font-size: 14px;
+    }
+
+    .atm-logo {
+        padding: 0.9rem 0.8rem 0 0;
+    }
+
+    .atm-name-date {
+        padding-left: 1.3rem;
+    }
+
+    .atm-dance-style-name {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .atmcard {
+        min-width: 22rem;
+        height: 16rem;
+    }
+
+    .profile-name-para {
+        font-size: 14px;
+    }
+
+    .personal-profile-img img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .profile-box {
+        width: 23.93rem;
+        height: 29.31rem;
+    }
+
+    .cardnub-name {
+        width: 21.31rem;
+    }
+
+    .balance-para-digit {
+        font-size: 20px;
+    }
+
+    .balance-para-digit {
+        font-size: 18px;
+    }
+
+    .credit-account,
+    .history {
+        width: 46.4rem;
+    }
+
+    .booked-classes {
+        width: 7.81rem;
+        font-size: 12px;
+    }
+
+    .payment-history {
+        font-size: 13px;
+    }
+
+    .table-data-hrline {
+        width: 44rem;
+    }
+
+    .class-type {
+        width: 9.93rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    .header {
+        padding: 0 1rem;
+    }
+
+
+    .profile-main-section {
+        width: 48rem;
+        height: 102.37rem;
+    }
+
+    .profile-container {
+        max-width: 98%;
+    }
+
+    .profile-heading {
+        font-size: 33px;
+    }
+
+    .p-gap {
+        gap: 1rem;
+    }
+
+    .profile-box {
+        width: 20.75rem;
+        height: 27.25rem;
+    }
+
+    .personal-edit,
+    .payment-edit {
+        justify-content: space-between;
+        padding: 1.3rem 1.3rem 0.6rem 1.4rem;
+    }
+
+    .personal-payment-heading {
+        font-size: 24px;
+    }
+
+    .edit-para {
+        font-size: 13px;
+    }
+
+    .personal-name-heading,
+    .para-alldetails {
+        font-size: 17px;
+    }
+
+    .profile-name-para {
+        font-size: 13px;
+    }
+
+    .profile-name-para {
+        font-size: 12px;
+    }
+
+    .personal-profile-img {
+        padding-left: 1.5rem;
+    }
+
+    .personal-profile-img img {
+        width: 5.93rem;
+        height: 5.93rem;
+    }
+
+    .heading-alldetails {
+        font-size: 12px;
+    }
+
+    .p-mobile {
+        padding: 0.4rem 1.5rem;
+    }
+
+    .card-number,
+    .card-name {
+        font-size: 13px;
+    }
+
+    .cardnub-name {
+        width: 17.87rem;
+        height: 3.12rem;
+    }
+
+    .atmcard {
+        min-width: 20.31rem;
+        height: 14.37rem;
+    }
+
+    .atm-logo {
+        padding: 0.9rem 1.5rem 0 0;
+    }
+
+    .atm2-padding {
+        padding-left: 2rem;
+    }
+
+    .atm-logo img {
+        width: 9.93rem;
+        height: 2.68rem;
+    }
+
+    .atm-dance-style-name {
+        font-size: 20px;
+    }
+
+    .atm-for-name {
+        font-size: 13px;
+    }
+
+    .classes-valid-all {
+        gap: 2rem;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .classes-valid-para-name {
+        font-size: 9px;
+    }
+
+    .classes-valid-para-vale {
+        font-size: 20px;
+    }
+
+    .credit-account {
+        width: 42.56rem;
+        height: 3.93rem;
+    }
+
+    .balance-para-digit {
+        font-size: 17px;
+    }
+
+    .booked-classes {
+        width: 8.93rem;
+        height: 2.68rem;
+        font-size: 14px;
+    }
+
+    .history {
+        width: 42.56rem;
+        height: 28.62rem;
+    }
+
+    .booked-pay-history,
+    .history-heading {
+        padding-left: 1rem;
+    }
+
+    .table-heading,
+    .table-data1,
+    .table-data2 {
+        padding-left: 1.2rem;
+    }
+
+    .history-h5-heading {
+        font-size: 16px;
+    }
+
+    .history-para {
+        font-size: 14px;
+    }
+
+    .table-data-hrline {
+        width: 41rem;
+        margin-left: 0.75rem;
+    }
+
+    .class-type {
+        width: 12.87rem;
+    }
+
+    .date {
+        width: 10rem;
+    }
+
+    .level {
+        width: 8.12rem;
+    }
+
+    .section-footer {
+        padding: 0 1rem;
+    }
+
+    .logo-footer img {
+        width: 13.75rem;
+        height: 3.75rem;
+    }
+
+    .logo-footer {
+        width: 15.625rem;
+    }
+
+    .footer-list li a,
+    .connect h4,
+    .head-office h4,
+    .head-office address {
+        font-size: 14px;
+    }
+
+    .focebook-icon-footer,
+    .instagram-icon-footer {
+        width: 2.87rem;
+        height: 2.87rem;
+    }
+
+    .copyright h4,
+    .terms-policy h4 {
+        font-size: 12px;
+    }
+
+    .terms-policy {
+        padding-left: 172px;
+    }
+}
+
+
+@media (max-width:712px) {
+    .section-footer {
+        padding: 0 2rem;
+    }
+
+    .grid-four-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo-footer img {
+        width: 250px;
+        height: 70px;
+    }
+
+    .logo-footer {
+        width: 270px;
+    }
+
+    .footer-list li a,
+    .connect h4,
+    .head-office h4,
+    .head-office address {
+        font-size: 16px;
+    }
+
+    .focebook-icon-footer,
+    .instagram-icon-footer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .copyright h4,
+    .terms-policy h4 {
+        font-size: 14px;
+    }
+
+    .terms-policy {
+        padding-left: 130px;
+    }
+
+    .terms-policy {
+        padding-left: 37px;
+    }
+
+    .about-us,
+    .connect {
+        padding-top: 2rem;
+    }
+
+    .copyright-section {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 687px) {
+    .profile-box {
+        width: 17.75rem;
+        height: 26rem;
+    }
+
+    .cardnub-name {
+        width: 14.87rem;
+    }
+
+    .atmcard {
+        min-width: 17.31rem;
+        height: 12.37rem;
+    }
+
+    .credit-account {
+        width: 36.56rem;
+        height: 3.5rem;
+    }
+
+    .history {
+        width: 36.56rem;
+        height: 28.62rem;
+    }
+
+    .table-data-hrline {
+        width: 35.4rem;
+    }
+
+    .personal-payment-heading {
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    .edit-para {
+        font-size: 10px;
+    }
+
+    .personal-profile-img img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .personal-name-heading {
+        font-size: 15px;
+    }
+
+    .para-alldetails {
+        font-size: 13px;
+    }
+
+    .profile-name-para,
+    .heading-alldetails {
+        font-size: 10px;
+    }
+
+    .email-pass {
+        padding: 0.5rem 0 0.3rem 1.7rem;
+    }
+
+    .card-number,
+    .card-name {
+        font-size: 10px;
+    }
+
+    .atm-logo img {
+        width: 7.93rem;
+        height: 2.3rem;
+    }
+
+    .atm-dance-style-name {
+        font-size: 17px;
+    }
+
+    .atm-for-name {
+        font-size: 12px;
+    }
+
+    .classes-valid-para-vale {
+        font-size: 18px;
+    }
+
+    .booked-classes {
+        width: 7.93rem;
+        height: 2.5rem;
+        font-size: 12px;
+    }
+
+    .payment-history {
+        font-size: 11px;
+    }
+
+    .history-h5-heading {
+        font-size: 14px;
+    }
+
+    .history-para {
+        font-size: 12px;
+    }
+
+    .class-type {
+        width: 10.87rem;
+    }
+}
+
+@media (max-width: 595px) {
+    .profile-main-section {
+        height: 155.37rem;
+    }
+
+    .profile-container {
+        max-width: 80%;
+    }
+
+    .p-gap {
+        flex-direction: column;
+    }
+
+    .personal-payment-heading {
+        font-size: 22px;
+        line-height: 47px;
+    }
+
+    .personal-profile-img img {
+        width: 5.93rem;
+        height: 5.93rem;
+    }
+
+    .edit-para {
+        font-size: 13px;
+    }
+
+    .personal-name-heading,
+    .para-alldetails {
+        font-size: 17px;
+    }
+
+    .email-pass {
+        padding: 1.5rem 0 0.3rem 1.7rem;
+    }
+
+    .heading-alldetails {
+        font-size: 12px;
+    }
+
+    .para-alldetails {
+        font-size: 15px;
+    }
+
+    .card-number,
+    .card-name {
+        font-size: 13px;
+    }
+
+    .email-pass {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .p-dob {
+        padding-left: 3px;
+    }
+
+    .allcard {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .atm-logo img {
+        width: 9.93rem;
+        height: 2.68rem;
+    }
+
+    .atm-name-date {
+        padding: 1rem 0 0 2.3rem;
+    }
+
+    .atm-for-name {
+        font-size: 14px;
+    }
+
+    .classes-valid-para-name {
+        font-size: 10px;
+    }
+
+    .profile-box {
+        width: 26.75rem;
+        height: 26rem;
+    }
+
+    .cardnub-name {
+        width: 23rem;
+    }
+
+    .atmcard {
+        min-width: 0;
+        width: 26.75rem;
+        height: 15rem;
+    }
+
+    .atm2-padding {
+        padding-left: 0;
+    }
+
+    .credit-account {
+        width: 26.75rem;
+        height: 3.5rem;
+    }
+
+    .history {
+        width: 26.75rem;
+        height: 32rem;
+    }
+
+    .table-data-hrline {
+        width: 25.6rem;
+    }
+
+    .date {
+        width: 7rem;
+    }
+
+    .class-name {
+        width: 16.18rem;
+    }
+
+    .class-type {
+        width: 9.87rem;
+    }
+
+
+}
+
+@media (max-width: 530px) {
+
+    .navbar-link:link,
+    .navbar-link:visited {
+        font-size: 2.2rem;
+    }
+
+    .navbar-lists {
+        gap: 2.8rem;
+    }
+
+    .navbar {
+        height: 35rem;
+    }
+
+    .profile-name h3 {
+        font-size: 16px;
+    }
+
+    .profile-name p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:511px) {
+    .profile-container {
+        max-width: 88%;
+    }
+}
+
+@media (max-width:501px) {
+    .section-footer {
+        padding: 0 1rem;
+    }
+
+    .logo-footer img {
+        width: 220px;
+        height: 60px;
+    }
+
+    .logo-footer {
+        width: 250px;
+    }
+
+    .footer-list li a,
+    .connect h4,
+    .head-office h4,
+    .head-office address {
+        font-size: 14px;
+    }
+
+    .focebook-icon-footer,
+    .instagram-icon-footer {
+        width: 46px;
+        height: 46px;
+    }
+
+    .copyright h4,
+    .terms-policy h4 {
+        font-size: 12px;
+    }
+
+    .terms-policy {
+        padding-left: 172px;
+    }
+}
+
+@media (max-width:479px) {
+    .profile-container {
+        max-width: 94%;
+    }
+}
+
+@media (max-width:452px) {
+    .profile-container {
+        max-width: 99%;
+    }
+}
+
+@media (max-width:426px) {
+
+    .profile-container {
+        max-width: 96%;
+    }
+
+    .profile-main-section {
+        width: 100%;
+        height: 160rem;
+    }
+
+    .profile-heading {
+        font-size: 28px;
+    }
+
+    .grid-two-column {
+        grid-template-columns: none;
+    }
+
+    .p-gap {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .profile-box {
+        width: 24rem;
+    }
+
+    .cardnub-name {
+        width: 21.5rem;
+    }
+
+    .email-pass,
+    .address-dob {
+        margin-left: 0;
+    }
+
+    .email-pass,
+    .address-dob {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .allcard {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .atm2-padding {
+        padding-left: 0;
+    }
+
+    .atmcard {
+        min-width: 0;
+        width: 24rem;
+    }
+
+    .personal-payment-heading {
+        font-size: 22px;
+    }
+
+    .credit-account {
+        width: 24rem;
+        height: 3rem;
+    }
+
+    .balance-para-digit {
+        font-size: 15px;
+    }
+
+    .booked-classes {
+        width: 5.93rem;
+        height: 2rem;
+        font-size: 9px;
+    }
+
+    .payment-history {
+        font-size: 10px;
+    }
+
+    .history {
+        width: 24rem;
+        height: 32rem;
+    }
+
+    .table-data-hrline {
+        width: 22.85rem;
+    }
+
+    .history-h5-heading {
+        font-size: 12px;
+    }
+
+    .history-para {
+        font-size: 10px;
+    }
+
+    .date {
+        width: 7rem;
+    }
+
+    .class-name {
+        width: 19.18rem;
+    }
+
+    .class-type {
+        width: 9.87rem;
+    }
+
+    .level {
+        width: 10.12rem;
+    }
+
+    .status {
+        width: 8.5rem;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-us {
+        padding-left: 38px;
+    }
+
+    .head-office,
+    .logo-footer {
+        padding-top: 2rem;
+    }
+
+    .copyright-section {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .terms-policy {
+        padding-left: 0;
+    }
+}
+
+@media (max-width:399px) {
+
+    .profile-container {
+        max-width: 99%;
+    }
+}
+
+@media (max-width:386px) {
+    .profile-container {
+        max-width: 97%;
+    }
+
+    .profile-box {
+        width: 22rem;
+    }
+
+    .p-pass {
+        padding-left: 32px;
+    }
+
+    .p-dob {
+        padding-left: 64px;
+    }
+
+    .atmcard {
+        width: 22rem;
+    }
+
+    .history {
+        width: 22rem;
+        height: 32rem;
+    }
+
+    .class-name {
+        width: 18.18rem;
+    }
+
+    .credit-account {
+        width: 22rem;
+        height: 3rem;
+    }
+
+    .cardnub-name {
+        width: 19.5rem;
+    }
+
+    .table-data-hrline {
+        width: 21rem;
+    }
+
+    .navbar-link:link,
+    .navbar-link:visited {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        height: 30rem;
+    }
+
+    .profile-name h3 {
+        font-size: 14px;
+    }
+
+    .profile-name p {
+        font-size: 10x;
+    }
+}
+
+@media (max-width:356px) {
+    .profile-container {
+        max-width: 90%;
+    }
+
+    .profile-box {
+        width: 17.75rem;
+        height: 26rem;
+    }
+
+    .cardnub-name {
+        width: 14.87rem;
+    }
+
+    .atmcard {
+        min-width: 0;
+        width: 17.75rem;
+        height: 13.37rem;
+    }
+
+    .credit-account {
+        width: 17.75rem;
+        height: 3.5rem;
+    }
+
+    .history {
+        width: 17.75rem;
+        height: 30.62rem;
+    }
+
+    .table-data-hrline {
+        width: 16.7rem;
+    }
+
+    .personal-payment-heading {
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    .p-pass {
+        padding-left: 27px;
+    }
+
+    .p-dob {
+        padding-left: 49px;
+    }
+
+    .edit-para {
+        font-size: 10px;
+    }
+
+    .personal-profile-img img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .personal-name-heading {
+        font-size: 15px;
+    }
+
+    .para-alldetails {
+        font-size: 13px;
+    }
+
+    .profile-name-para,
+    .heading-alldetails {
+        font-size: 10px;
+    }
+
+    .email-pass {
+        padding: 0.5rem 0 0.3rem 1.7rem;
+    }
+
+    .atm-name-date {
+        padding: 1rem 0 0 1.5rem;
+    }
+
+    .card-number,
+    .card-name {
+        font-size: 10px;
+    }
+
+    .atm-logo img {
+        width: 7.93rem;
+        height: 2.3rem;
+    }
+
+    .atm-dance-style-name {
+        font-size: 17px;
+    }
+
+    .atm-for-name {
+        font-size: 12px;
+    }
+
+    .classes-valid-para-vale {
+        font-size: 18px;
+    }
+
+    .booked-classes {
+        width: 5.93rem;
+        height: 2rem;
+        font-size: 9px;
+    }
+
+    .payment-history {
+        font-size: 10px;
+    }
+
+    .history-h5-heading {
+        font-size: 10px;
+    }
+
+    .history-para {
+        font-size: 9px;
+    }
+
+    .class-type {
+        width: 9.6rem;
+    }
+
+    .class-name {
+        width: 17.18rem;
+    }
+
+    .table-heading,
+    .table-data1,
+    .table-data2 {
+        padding-left: 0.5rem;
+    }
+
+    .table-data1 {
+        padding: 0.5rem 0 0.8rem 0.5rem;
+    }
+}
+
+@media (max-width:311px) {
+    .profile-container {
+        max-width: 94%;
+    }
+}
+@media (max-width:298px) {
+    .profile-container {
+        max-width: 99%;
+    }
+}

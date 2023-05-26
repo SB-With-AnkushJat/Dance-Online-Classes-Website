@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/profileStyle.css">
+    <script defer src="/index.js"></script>
+    <script src="https://kit.fontawesome.com/7d06221814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div>
+            <a href="/index.html">
+                <img src="/img/logo.png" alt="Logo img" class="logo">
+            </a>
+        </div>
+        <nav class="navbar display-flex center">
+            <div>
+
+                <ul class="navbar-lists">
+                    <li><a href="/classlist.html" class="navbar-link">my class</a></li>
+                    <li><a href="#" class="navbar-link">My Friends</a></li>
+                </ul>
+
+            </div>
+            <div class="header-profile-details display-flex">
+                <div class="profile-name">
+                    <h3>Megan Houston</h3>
+                    <p>View your profile</p>
+                </div>
+                <div class="profile-img center">
+                    <img src="/img/profile.png" alt="profile image">
+                </div>
+                <div class="bell-icon center">
+                    <img src="/img/notification-bell1.png" alt=" notification bell">
+                </div>
+                <div class="dot-menu-icon center">
+                    <img src="/img/dot-menu.png" alt="">
+                </div>
+                <div class="add-cart-icon center">
+                    <img src="/img/add-icon.png" alt="add cart icon">
+                </div>
+
+
+            </div>
+        </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon class="mobile-navbar-icon" name="menu-outline"></ion-icon>
+            <ion-icon class="mobile-navbar-icon" name="close-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main class="profile-main-section">
+        <div class="profile-container">
+            <h2 class="profile-heading capital">My profile</h2>
+            <div class="display-flex p-gap grid-two-column">
+                <div class="profile-box personal-left">
+                    <div class="display-flex personal-edit ">
+                        <h3 class="personal-payment-heading capital">Personal information</h3>
+                        <p class="edit-para capital center">Edit Profile</p>
+                    </div>
+                    <div class="profile-img-name display-flex">
+                        <div class="personal-profile-img">
+                            <img src="/img/profile2.png" alt="profile image">
+                        </div>
+                        <div class="personal-profile-name">
+                            <h4 class="personal-name-heading capital">Megan Houston</h4>
+                            <p class="profile-name-para para-member capital">member since : august 2017
+                            </p>
+                            <p class="profile-name-para para-upload capital"> upload photo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="personal-details">
+                        <div class="email-pass grid grid-two-column">
+                            <div class="p-email">
+                                <h5 class="heading-alldetails">email</h5>
+                                <p class="para-alldetails">megan.houston@gmail.com</p>
+                            </div>
+                            <div class="p-pass">
+                                <h5 class="heading-alldetails">password</h5>
+                                <p class="para-alldetails">***********</p>
+                            </div>
+                        </div>
+                        <div class="address-dob grid grid-two-column">
+                            <div class="p-addres">
+                                <h5 class="heading-alldetails">address</h5>
+                                <p class="para-alldetails">London</p>
+                            </div>
+                            <div class="p-dob">
+                                <h5 class="heading-alldetails">birthday</h5>
+                                <p class="para-alldetails">22/02/1995</p>
+                            </div>
+                        </div>
+                        <div class="moblie grid grid-two-column">
+                            <div class="p-mobile">
+                                <h5 class="heading-alldetails">mobile number</h5>
+                                <p class="para-alldetails">xxxx-xxxx-xxxx</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-box payment-right">
+                    <div class="display-flex payment-edit">
+                        <h3 class="personal-payment-heading capital">Payment Information</h3>
+                        <p class="edit-para capital center">Edit payment</p>
+                    </div>
+                    <div class="cardnub-name display-flex">
+                        <h4 class="card-number center">XXXX XXXX XXXX XX56</h4>
+                        <p class="card-name">visa</p>
+                    </div>
+                    <div class="cardnub-name display-flex">
+                        <h4 class="card-number center">XXXX XXXX XXXX XX89</h4>
+                        <p class="card-name">mastercard</p>
+                    </div>
+                    <div class="cardnub-name display-flex">
+                        <h4 class="card-number center">me***************com</h4>
+                        <p class="card-name">paypal</p>
+                    </div>
+                    <div class="cardnub-name display-flex">
+                        <h4 class="card-number center">+1XX-XXXX-XX68</h4>
+                        <p class="card-name">google pay</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="your-class-card">
+                <h3 class="personal-payment-heading class-card-hding">Your Class Card(s)</h3>
+                <div class="allcard display-flex">
+                    <div class="atm1 atmcard">
+                        <div class="atm-logo">
+                            <img src="/img/logo.png" alt="Logo">
+                        </div>
+                        <div class="atm-name-date">
+                            <p class="atm-for-name">for</p>
+                            <h4 class="atm-dance-style-name">New Jersey Dancers</h4>
+                            <div class="classes-valid-all display-flex">
+                                <div class="classes-left display-flex">
+                                    <p class="classes-valid-para-name">Classes <br> Available</p>
+                                    <p class="classes-valid-para-vale">10</p>
+                                </div>
+                                <div class="valid-right display-flex">
+                                    <p class="classes-valid-para-name">Valid <br> Upto</p>
+                                    <p class="classes-valid-para-vale">11/21</p>
+                                </div>
+                            </div>
+                            <p class="atm-for-name">Megan Houston</p>
+                        </div>
+                    </div>
+                    <div class="atm2-padding">
+                        <div class="atm2 atmcard">
+                            <div class="atm-logo">
+                                <img src="/img/logo.png" alt="Logo">
+                            </div>
+                            <div class="atm-name-date">
+                                <p class="atm-for-name">for</p>
+                                <h4 class="atm-dance-style-name">Lucy Hale</h4>
+                                <div class="classes-valid-all display-flex">
+                                    <div class="classes-left display-flex">
+                                        <p class="classes-valid-para-name">Classes <br> Available</p>
+                                        <p class="classes-valid-para-vale">06</p>
+                                    </div>
+                                    <div class="valid-right display-flex">
+                                        <p class="classes-valid-para-name">Valid <br> Upto</p>
+                                        <p class="classes-valid-para-vale">09/21</p>
+                                    </div>
+                                </div>
+                                <p class="atm-for-name">Megan Houston</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="atm3 atmcard SlideShow">
+                        <div class="atm-logo">
+                            <img src="/img/logo.png" alt="Logo">
+                        </div>
+                        <div class="atm-name-date">
+                            <p class="atm-for-name">for</p>
+                            <h4 class="atm-dance-style-name">Christina wolf</h4>
+                            <div class="classes-valid-all display-flex">
+                                <div class="classes-left display-flex">
+                                    <p class="classes-valid-para-name">Classes <br> Available</p>
+                                    <p class="classes-valid-para-vale">10</p>
+                                </div>
+                                <div class="valid-right display-flex">
+                                    <p class="classes-valid-para-name">Valid <br> Upto</p>
+                                    <p class="classes-valid-para-vale">11/21</p>
+                                </div>
+                            </div>
+                            <p class="atm-for-name">Megan Houston</p>
+                        </div>
+                    </div>
+                    <!-- <a class="back center" onclick="prev(-1)"><img src="/img/previous-icon.png" alt="previous icon"></a>
+                    <a class="forward center" onclick="next(1)"><img src="/img/next-icon.png" alt="next icon"></a> -->
+
+                </div>
+            </div>
+            <div class="your-credit">
+                <h3 class="your-credit-heading personal-payment-heading">
+                    Your Credit
+                </h3>
+                <div class="credit-account display-flex">
+                    <p class="balance-para balance-para-digit">Your balance in the credit account</p>
+                    <p class="balance-digit balance-para-digit">$45</p>
+                </div>
+            </div>
+            <div class="history">
+                <h3 class="history-heading personal-payment-heading">History</h3>
+                <div class="booked-pay-history display-flex">
+                    <h4 class="booked-classes center">booked classes</h4>
+                    <h4 class="payment-history center">payment history</h4>
+                </div>
+                <div class="table-history">
+                    <div class="table-heading display-flex">
+                        <h5 class="date history-h5-heading">date</h5>
+                        <h5 class="class-name history-h5-heading">class name</h5>
+                        <h5 class="level history-h5-heading">level</h5>
+                        <h5 class="class-type history-h5-heading">class type</h5>
+                        <h5 class="status history-h5-heading">status</h5>
+                    </div>
+                    <div class="table-data1 display-flex">
+                        <p class="date history-para">August 16,2020</p>
+                        <p class="class-name history-para">Online: Pilates Evolution by Lucy Hale</p>
+                        <p class="level history-para">Intermediate</p>
+                        <p class="class-type history-para">Pilates</p>
+                        <p class="status history-para para-status">Attended</p>
+                    </div>
+                    <div class="table-data-hrline"></div>
+                    <div class="table-data2 display-flex">
+                        <p class="date history-para">August 19,2020</p>
+                        <p class="class-name history-para">Online: Pilates Evolution by Lucy Hale</p>
+                        <p class="level history-para">Intermediate</p>
+                        <p class="class-type history-para">Pilates</p>
+                        <p class="status history-para para-status">Attended</p>
+                    </div>
+                    <div class="table-data-hrline"></div>
+                    <div class="table-data2 display-flex">
+                        <p class="date history-para">August 21,2020</p>
+                        <p class="class-name history-para">Online: Pilates Evolution by Lucy Hale</p>
+                        <p class="level history-para">Intermediate</p>
+                        <p class="class-type history-para">Pilates</p>
+                        <p class="status history-para para-status">Attended</p>
+                    </div>
+                    <div class="table-data-hrline"></div>
+                    <div class="table-data2 display-flex">
+                        <p class="date history-para">August 23,2020</p>
+                        <p class="class-name history-para">Online: Pilates Evolution by Lucy Hale</p>
+                        <p class="level history-para">Intermediate</p>
+                        <p class="class-type history-para">Pilates</p>
+                        <p class="status history-para para-status">Attended</p>
+                    </div>
+                    <div class="table-data-hrline"></div>
+                    <div class="table-data2 display-flex">
+                        <p class="date history-para">August 25,2020</p>
+                        <p class="class-name history-para">Online: Pilates Evolution by Lucy Hale</p>
+                        <p class="level history-para">Intermediate</p>
+                        <p class="class-type history-para">Pilates</p>
+                        <p class="status history-para para-status">Attended</p>
+                    </div>
+                    <div class="table-data-hrline"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="section-footer">
+        <div class="footer-container grid grid-four-column">
+            <div class="logo-footer display-flex">
+                <a href="#home">
+                    <img src="img/logo.png" alt="Logo img">
+                </a>
+            </div>
+            <div class="head-office">
+                <h4>head head office</h4>
+                <address>
+                    B block road, sector 64, <br>
+                    noida, uttar pradesh, <br>
+                    india, 201301 <br>
+                    www.agicent.com <br>
+                </address>
+            </div>
+            <div class="about-us">
+                <ul class="footer-list">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">how it works</a></li>
+                    <li><a href="#">why upwardfacingcat</a></li>
+                    <li><a href="#">pricing</a></li>
+                </ul>
+            </div>
+            <div class="connect">
+                <h4>connect with us</h4>
+                <div class="connect-icon display-flex">
+                    <div class="focebook-icon-footer center"><img src="/img/facebook-icon.png" alt="facebook icon">
+                    </div>
+                    <div class="instagram-icon-footer center"><img src="/img/instagram.png" alt="instagram icon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="copyright">
+                <h4>Copyright © Upwardfacingcat 2020. All rights reserved.</h4>
+            </div>
+            <div class="terms-policy display-flex">
+                <h4>terms & condition</h4>
+                <h4>Privacy Policy</h4>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

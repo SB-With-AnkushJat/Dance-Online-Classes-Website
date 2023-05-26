@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/classStyle.css">
+    <script defer src="/index.js"></script>
+    <script src="https://kit.fontawesome.com/7d06221814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <a href="/index.html">
+            <img src="img/logo.png" alt="Logo img" class="logo">
+        </a>
+        <nav class="navbar display-flex center">
+            <div class="mobile-navbar">
+                <ul class="navbar-lists">
+                    <li><a href="/index.html" class="navbar-link class-navbar">Home</a></li>
+                    <li><a href="/classlist.html" class="navbar-link class-navbar">Class List</a></li>
+                    <li><a href="#about us" class="navbar-link class-navbar">About Us</a></li>
+                    <li><a href="#sign up as teacher" class="navbar-link class-navbar">Sign Up As Teacher</a></li>
+                    <li><a href="#contact" class="navbar-link class-navbar">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <div class="add-cart-icon center">
+                <img src="/img/add-icon.png" alt="add cart icon">
+            </div>
+            <div class="profile-img">
+                <a href="/profile.html" class="center"><img src="/img/profile.png" alt="profile image"></a>
+            </div>
+        </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon class="mobile-navbar-icon" name="menu-outline"></ion-icon>
+            <ion-icon class="mobile-navbar-icon" name="close-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main class="classlist-main-section">
+        <div class="classlist-container">
+            <h2 class="classlist-heading-boxmain">Class List</h2>
+            <div class="online-classlist display-flex">
+
+                <div>
+                    <h4 class="classlist-heading-boxsecond">Filtered by</h4>
+                    <div class="classlist-filter">
+                        <div class="Filter-box">
+                            <h3>Choose date</h3>
+                            <select name="date" id="date" class="Choose-box">
+                                <option value="today">Today</option>
+                                <option value="tomorrow">Tomorrow</option>
+                                <option value="yesterday">Yesterday</option>
+                            </select>
+                        </div>
+                        <div class="Filter-box">
+                            <h3>Choose time</h3>
+                            <p>09.00am - 09.00pm</p>
+                            <input type="range" min="5" max="21" value="9" class="Choose-box input-box">
+                            <!-- <input type="range" min="13" max="21" value="15"> -->
+                        </div>
+                        <div class="Filter-box">
+                            <h3>Choose dance style</h3>
+                            <select name="dance" id="dance" class="Choose-box">
+                                <option value="New Jersey Dancers">New Jersey Dancers</option>
+                                <option value="Latin Style">Latin style</option>
+                                <option value="Christina wolf">Christina wolf</option>
+                            </select>
+                        </div>
+                        <div class="Filter-box">
+                            <h3>Choose teacher / instructor</h3>
+                            <select name="teacher" id="teacher" class="Choose-box">
+                                <option value="vishnu">vishnu</option>
+                                <option value="rahul">rahul</option>
+                                <option value="sarjit">sarjit</option>
+                            </select>
+                        </div>
+                        <div class="Filter-box">
+                            <h3>Choose level</h3>
+                            <select name="level" id="level" class="Choose-box">
+                                <option value="beginner">beginner</option>
+                                <option value="intermediate">intermediate</option>
+                                <option value="high">high</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="classlist-online-box">
+                    <h4 class="classlist-heading-boxsecond">Showing class for : November 23, 2020</h4>
+                    <div class="classlist-online">
+                        <div class="search display-flex">
+                            <input type="search" id="search" name="search" placeholder="What are you looking for?"><img
+                                src="/img/search-icon.png" alt="search icon" class="search-icon">
+                        </div>
+                        <div class="classlist-detail">
+                            <img src="/img/dancimg.png" alt="">
+                            <div class="classlist-lr-box display-flex">
+                                <div class="leftbox">
+                                    <h1>Online: Pilates Evolution by Lucy Hale</h1>
+                                    <div class="calendar-icon-date display-flex">
+                                        <div class="calendar-icon"></div>
+                                        <p class=" calendar-para  date-assignedtech-spots">November 23, 2020 | 01.00pm -
+                                            02.00pm (EDT)</p>
+
+                                    </div>
+                                    <div class="teacher-name display-flex">
+                                        <p class="date-assignedtech-spots">Assigned teacher :</p>
+                                        <p class="tname-sleft">Lucy Hale</p>
+                                    </div>
+                                    <div class="Spots-left  display-flex">
+                                        <p class="date-assignedtech-spots">Spots left:</p>
+                                        <p class="tname-sleft">0/20</p>
+                                    </div>
+                                </div>
+
+                                <div class="rightbox">
+                                    <div class="price-time display-flex">
+                                        <h1>US$15</h1>
+                                        <div class="hrline"></div>
+                                        <h1>60min</h1>
+                                    </div>
+                                    <div class="add-class-btn">
+                                        <button>add class to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classlist-detail">
+                            <img src="/img/dancimg.png" alt="">
+                            <div class="classlist-lr-box display-flex">
+                                <div class="leftbox">
+                                    <h1>Online: Pilates Evolution by Lucy Hale</h1>
+                                    <div class="calendar-icon-date display-flex">
+                                        <div class="calendar-icon"></div>
+                                        <p class=" calendar-para  date-assignedtech-spots">November 23, 2020 | 01.00pm -
+                                            02.00pm (EDT)</p>
+
+                                    </div>
+                                    <div class="teacher-name display-flex">
+                                        <p class="date-assignedtech-spots">Assigned teacher :</p>
+                                        <p class="tname-sleft">Lucy Hale</p>
+                                    </div>
+                                    <div class="Spots-left  display-flex">
+                                        <p class="date-assignedtech-spots">Spots left:</p>
+                                        <p class="tname-sleft">0/20</p>
+                                    </div>
+                                </div>
+
+                                <div class="rightbox">
+                                    <div class="price-time display-flex">
+                                        <h1>US$15</h1>
+                                        <div class="hrline"></div>
+                                        <h1>60min</h1>
+                                    </div>
+                                    <div class="add-class-btn">
+                                        <button>add class to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classlist-detail">
+                            <img src="/img/dancimg.png" alt="">
+                            <div class="classlist-lr-box display-flex">
+                                <div class="leftbox">
+                                    <h1>Online: Pilates Evolution by Lucy Hale</h1>
+                                    <div class="calendar-icon-date display-flex">
+                                        <div class="calendar-icon"></div>
+                                        <p class=" calendar-para  date-assignedtech-spots">November 23, 2020 | 01.00pm -
+                                            02.00pm (EDT)</p>
+
+                                    </div>
+                                    <div class="teacher-name display-flex">
+                                        <p class="date-assignedtech-spots">Assigned teacher :</p>
+                                        <p class="tname-sleft">Lucy Hale</p>
+                                    </div>
+                                    <div class="Spots-left  display-flex">
+                                        <p class="date-assignedtech-spots">Spots left:</p>
+                                        <p class="tname-sleft">0/20</p>
+                                    </div>
+                                </div>
+
+                                <div class="rightbox">
+                                    <div class="price-time display-flex">
+                                        <h1>US$15</h1>
+                                        <div class="hrline"></div>
+                                        <h1>60min</h1>
+                                    </div>
+                                    <div class="add-class-btn">
+                                        <button>add class to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classlist-detail">
+                            <img src="/img/dancimg.png" alt="">
+                            <div class="classlist-lr-box display-flex">
+                                <div class="leftbox">
+                                    <h1>Online: Pilates Evolution by Lucy Hale</h1>
+                                    <div class="calendar-icon-date display-flex">
+                                        <div class="calendar-icon"></div>
+                                        <p class=" calendar-para  date-assignedtech-spots">November 23, 2020 | 01.00pm -
+                                            02.00pm (EDT)</p>
+
+                                    </div>
+                                    <div class="teacher-name display-flex">
+                                        <p class="date-assignedtech-spots">Assigned teacher :</p>
+                                        <p class="tname-sleft">Lucy Hale</p>
+                                    </div>
+                                    <div class="Spots-left  display-flex">
+                                        <p class="date-assignedtech-spots">Spots left:</p>
+                                        <p class="tname-sleft">0/20</p>
+                                    </div>
+                                </div>
+
+                                <div class="rightbox">
+                                    <div class="price-time display-flex">
+                                        <h1>US$15</h1>
+                                        <div class="hrline"></div>
+                                        <h1>60min</h1>
+                                    </div>
+                                    <div class="add-class-btn">
+                                        <button>add class to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classlist-detail">
+                            <img src="/img/dancimg.png" alt="">
+                            <div class="classlist-lr-box display-flex">
+                                <div class="leftbox">
+                                    <h1>Online: Pilates Evolution by Lucy Hale</h1>
+                                    <div class="calendar-icon-date display-flex">
+                                        <div class="calendar-icon"></div>
+                                        <p class=" calendar-para  date-assignedtech-spots">November 23, 2020 | 01.00pm -
+                                            02.00pm (EDT)</p>
+
+                                    </div>
+                                    <div class="teacher-name display-flex">
+                                        <p class="date-assignedtech-spots">Assigned teacher :</p>
+                                        <p class="tname-sleft">Lucy Hale</p>
+                                    </div>
+                                    <div class="Spots-left  display-flex">
+                                        <p class="date-assignedtech-spots">Spots left:</p>
+                                        <p class="tname-sleft">0/20</p>
+                                    </div>
+                                </div>
+
+                                <div class="rightbox">
+                                    <div class="price-time display-flex">
+                                        <h1>US$15</h1>
+                                        <div class="hrline"></div>
+                                        <h1>60min</h1>
+                                    </div>
+                                    <div class="add-class-btn">
+                                        <button>add class to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classlist-detail">
+                            <img src="/img/dancimg.png" alt="">
+                            <div class="classlist-lr-box display-flex">
+                                <div class="leftbox">
+                                    <h1>Online: Pilates Evolution by Lucy Hale</h1>
+                                    <div class="calendar-icon-date display-flex">
+                                        <div class="calendar-icon"></div>
+                                        <p class=" calendar-para  date-assignedtech-spots">November 23, 2020 | 01.00pm -
+                                            02.00pm (EDT)</p>
+
+                                    </div>
+                                    <div class="teacher-name display-flex">
+                                        <p class="date-assignedtech-spots">Assigned teacher :</p>
+                                        <p class="tname-sleft">Lucy Hale</p>
+                                    </div>
+                                    <div class="Spots-left  display-flex">
+                                        <p class="date-assignedtech-spots">Spots left:</p>
+                                        <p class="tname-sleft">0/20</p>
+                                    </div>
+                                </div>
+
+                                <div class="rightbox">
+                                    <div class="price-time display-flex">
+                                        <h1>US$15</h1>
+                                        <div class="hrline"></div>
+                                        <h1>60min</h1>
+                                    </div>
+                                    <div class="add-class-btn">
+                                        <button>add class to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load-more-btn center">
+                            <button>load more classes</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="section-footer">
+        <div class="footer-container grid grid-four-column">
+            <div class="logo-footer display-flex">
+                <a href="#home">
+                    <img src="img/logo.png" alt="Logo img">
+                </a>
+            </div>
+            <div class="head-office">
+                <h4>head head office</h4>
+                <address>
+                    B block road, sector 64, <br>
+                    noida, uttar pradesh, <br>
+                    india, 201301 <br>
+                    www.agicent.com <br>
+                </address>
+            </div>
+            <div class="about-us">
+                <ul class="footer-list">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">how it works</a></li>
+                    <li><a href="#">why upwardfacingcat</a></li>
+                    <li><a href="#">pricing</a></li>
+                </ul>
+            </div>
+            <div class="connect">
+                <h4>connect with us</h4>
+                <div class="connect-icon display-flex">
+                    <div class="focebook-icon-footer center"><img src="/img/facebook-icon.png" alt="facebook icon"></div>
+                    <div class="instagram-icon-footer center"><img src="/img/instagram.png" alt="instagram icon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="copyright">
+                <h4>Copyright © Upwardfacingcat 2020. All rights reserved.</h4>
+            </div>
+            <div class="terms-policy display-flex">
+                <h4>terms & condition</h4>
+                <h4>Privacy Policy</h4>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

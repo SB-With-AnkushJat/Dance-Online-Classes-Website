@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/index.js"></script>
+    <script src="https://kit.fontawesome.com/7d06221814.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <a href="#home">
+            <img src="img/logo.png" alt="Logo img" class="logo">
+        </a>
+        <nav class="navbar display-flex center">
+            <div class="mobile-navbar">
+                <ul class="navbar-lists">
+                    <li><a href="#home" class="navbar-link">Home</a></li>
+                    <li><a href="/classlist.html" class="navbar-link">Class List</a></li>
+                    <li><a href="#about us" class="navbar-link">About Us</a></li>
+                    <li><a href="#sign up as teacher" class="navbar-link">Sign Up As Teacher</a></li>
+                    <li><a href="/profile.html" class="navbar-link">Contact</a></li>
+                    <!-- <li><a href="#" class="navbar-link"></a></li> -->
+                </ul>
+            </div>
+            <div class="add-cart-icon center">
+                <img src="/img/add-icon.png" alt="add cart icon">
+            </div>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon class="mobile-navbar-icon" name="menu-outline"></ion-icon>
+            <ion-icon class="mobile-navbar-icon" name="close-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-section">
+            <div class="bannerimg">
+                <img src="/img/image.png" alt="bannerimg">
+            </div>
+            <div class="bannerimg1">
+            </div>
+            <div class="linearimg"></div>
+            
+            <div class="login-section loginbox">
+                <div class="login-btnsection display-flex container grid grid-two-column">
+                    <a class="signup-heading" href="#">Sign up</a>
+                    <a class="login-heading" href="#">Login</a>
+                </div>
+                <div class="signup-form">
+                    <h1>Welcome to
+                        Upwardfacingcat!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Aenean pretium laoreet diam, sit amet
+                        efficitur
+                        ex ultrices
+                        at. Fusce facilisis fringilla maximus.</p>
+                    <input class="signbtn" type="submit" value="Create an account">
+                    <!-- <div class="signupheading">Welcome to
+                        Upwardfacingcat!</div> -->
+                </div>
+                <div class="login-form">
+                    <div class="social-media-login container grid grid-two-column">
+                        <button class="btnlogin facebook-login center"><img src="/img/facebook-icon.png"
+                                alt="facebook icon">
+                            Log in with Facebook
+                        </button>
+                        <button class="btnlogin center"><img src="/img/google.png" alt="google icon">
+                            Log in with google
+                        </button>
+                    </div>
+                    <div class="loginformhead center">
+                        <h4>or</h4>
+                    </div>
+                    <form action="#" method="POST">
+                        <div class="login-main-form">
+                            <div class="grid grid-one-column">
+                                <label for="username">Username</label>
+                                <input class="idpass" type="text" name="username" placeholder="Username" id="username"
+                                    autocomplete="off" required>
+                            </div>
+                            <div class="grid grid-one-column">
+                                <label for="password">Password</label>
+                                <input class="idpass" type="password" name="email" placeholder="Password" id="email"
+                                    autocomplete="off" required>
+                            </div>
+                            <div class="rememberbtn display-flex">
+                                <input type="checkbox">
+                                <h4>Remember me</h4>
+                            </div>
+                        </div>
+
+                        <div class="forgetsection">
+                            <input class="login-submit-btn" type="submit" id="submit" value="Log in">
+                            <h4>Forgot your password?</h4>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-footer">
+        <div class="footer-container grid grid-four-column">
+            <div class="logo-footer display-flex">
+                <a href="#home">
+                    <img src="img/logo.png" alt="Logo img">
+                </a>
+            </div>
+            <div class="head-office">
+                <h4>head head office</h4>
+                <address>
+                    B block road, sector 64, <br>
+                    noida, uttar pradesh, <br>
+                    india, 201301 <br>
+                    www.agicent.com <br>
+                </address>
+            </div>
+            <div class="about-us">
+                <ul class="footer-list">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">how it works</a></li>
+                    <li><a href="#">why upwardfacingcat</a></li>
+                    <li><a href="#">pricing</a></li>
+                </ul>
+            </div>
+            <div class="connect">
+                <h4>connect with us</h4>
+                <div class="connect-icon display-flex">
+                    <div class="focebook-icon-footer center"><img src="/img/facebook-icon.png" alt="facebook icon">
+                    </div>
+                    <div class="instagram-icon-footer center"><img src="/img/instagram.png" alt="instagram icon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="copyright">
+                <h4>Copyright © Upwardfacingcat 2020. All rights reserved.</h4>
+            </div>
+            <div class="terms-policy display-flex">
+                <h4>terms & condition</h4>
+                <h4>Privacy Policy</h4>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
